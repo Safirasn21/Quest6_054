@@ -90,8 +90,22 @@ fun MahasiswaFormView(
                 )
             )
                 .fillMaxSize(),
-        )
-
+        ){
+            Column (modifier = Modifier.fillMaxSize().padding(16.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = "masukkan data",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 19.sp
+                )
+                Text(
+                    text = "Isi sesuai data yang kamu daftarkan",
+                    fontWeight = FontWeight.Light
+                )
+                Spacer(modifier = Modifier.padding(8.dp))
+            }
+        }
     }
 }
 
