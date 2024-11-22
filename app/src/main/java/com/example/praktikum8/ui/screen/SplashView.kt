@@ -22,7 +22,8 @@ import com.example.praktikum8.R
 
 @Preview(showBackground = true)
 @Composable
-fun SplashView() {
+fun SplashView(onMulaiButton: () -> Unit // Menambahkan parameter fungsi
+) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -47,4 +48,10 @@ fun SplashView() {
             Text("Mulai")
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun SplashViewPreview() {
+    SplashView(onMulaiButton = {})
 }
