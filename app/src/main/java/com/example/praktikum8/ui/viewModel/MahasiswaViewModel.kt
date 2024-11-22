@@ -13,5 +13,10 @@ class MahasiswaViewModel : ViewModel() {
     private val mahasiswaStateUI =
         MutableStateFlow(Mahasiswa())
 
+    //response atau state
+    val mahasiswaState:
+            StateFlow<Mahasiswa> =
+        mahasiswaStateUI.asStateFlow()
+
 
 }
