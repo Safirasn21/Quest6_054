@@ -58,7 +58,16 @@ fun MahasiswaFormView(
         horizontalAlignment = Alignment.CenterHorizontally)
     {
         Spacer(modifier = modifier.padding(16.dp))
+        Row (verticalAlignment = Alignment.CenterVertically)
+        {
+            Image(
+                painter = painterResource(id = R.drawable.umy),
+                contentDescription = "",
+                modifier = Modifier.size(45.dp)
+            )
+            Spacer(modifier = Modifier.padding(start = 16.dp))
 
+        }
     }
 }
 
