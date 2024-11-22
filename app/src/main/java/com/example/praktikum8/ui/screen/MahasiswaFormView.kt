@@ -52,6 +52,14 @@ fun MahasiswaFormView(
     val listData: MutableList<String> =
         mutableListOf(nim, nama, email)
 
+    Column (modifier = Modifier
+        .fillMaxSize()
+        .background(color = colorResource(R.color.primary)),
+        horizontalAlignment = Alignment.CenterHorizontally)
+    {
+        Spacer(modifier = modifier.padding(16.dp))
+
+    }
 }
 
 
