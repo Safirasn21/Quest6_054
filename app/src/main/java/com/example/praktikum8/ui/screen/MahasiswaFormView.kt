@@ -161,7 +161,18 @@ fun MahasiswaFormView(
                     shape = RoundedCornerShape(50.dp)
                 )
                 Spacer(modifier = Modifier.padding(16.dp))
-
+                Row (
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement =
+                    Arrangement.SpaceEvenly
+                ){
+                    Button(onClick = {onBackButtonClicked()}) {
+                        Text(text = "Kembali")
+                    }
+                    Button(onClick = {onSubmitButtonClicked}) {
+                        Text(text = "Simpan")
+                    }
+                }
             }
         }
     }
